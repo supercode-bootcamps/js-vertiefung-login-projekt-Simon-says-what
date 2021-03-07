@@ -7,6 +7,8 @@ const saved = [
 ];
 let mother_div = document.getElementById("mother");
 let person = document.getElementById("username_log");
+let main_main = document.querySelector("main");
+let header_header= document.querySelector("header");
 
 
 
@@ -30,6 +32,8 @@ function getInfo() {
    
     if (check) {
         mother_div.remove();
+        main_main.classList.remove("blur");
+        header_header.classList.remove("blur");
         person.innerHTML = `moin ${check.name}`;
         setCookie(username_input,password_input,1)
         
@@ -46,6 +50,8 @@ function getInfo() {
     
 }
 
+
+// HABE ICH BEHALTEN, WEIL ICH MICH NICHT DAVON TRENNEN KANN!
 
 //   for (i = 0; i < saved.length; i++) {
 //     if (
